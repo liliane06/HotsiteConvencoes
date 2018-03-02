@@ -1,22 +1,19 @@
 @font-face {
-  font-family: 'gotham';
-  src: url("fontes/gothammedium-webfont.eot");
-  src: url("fontes/gothammedium-webfont.eot?#iefix") format('embedded-opentype'), url("fontes/gothammedium-webfont.woff2") format('woff2'), url("fontes/gothammedium-webfont.woff") format('woff'), url("fontes/gothammedium-webfont.ttf") format('truetype');
+  font-family: 'Josefin Sans';
+  src: url("../fonts/JosefinSans-Light.woff2") format('woff2'), url("../fonts/JosefinSans-Light.woff") format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url("../fonts/JosefinSans-Regular.woff2") format('woff2'), url("../fonts/JosefinSans-Regular.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'gotham';
-  src: url("fontes/gotham-bold-webfont.eot");
-  src: url("fontes/gotham-bold-webfont.eot?#iefix") format('embedded-opentype'), url("fontes/gotham-bold-webfont.woff2") format('woff2'), url("fontes/gotham-bold-webfont.woff") format('woff'), url("fontes/gotham-bold-webfont.ttf") format('truetype');
+  font-family: 'Josefin Sans';
+  src: url("../fonts/JosefinSans-Bold.woff2") format('woff2'), url("../fonts/JosefinSans-Bold.woff") format('woff');
   font-weight: bold;
-  font-style: bold;
-}
-@font-face {
-  font-family: 'gotham';
-  src: url("fontes/gotham-light-webfont.eot");
-  src: url("fontes/gotham-light-webfont.eot?#iefix") format('embedded-opentype'), url("fontes/gotham-light-webfont.woff2") format('woff2'), url("fontes/gotham-light-webfont.woff") format('woff'), url("fontes/gotham-light-webfont.ttf") format('truetype');
-  font-weight: 100;
   font-style: normal;
 }
 *,
@@ -28,7 +25,7 @@ h4,
 h5,
 h6,
 html {
-  font-family: 'gotham', serif;
+  font-family: 'Josefin Sans', serif;
 }
 .relative {
   position: relative;
@@ -103,24 +100,21 @@ div.laptop-wrapper iframe {
   }
 }
 @font-face {
-  font-family: 'gotham';
-  src: url("fontes/gothammedium-webfont.eot");
-  src: url("fontes/gothammedium-webfont.eot?#iefix") format('embedded-opentype'), url("fontes/gothammedium-webfont.woff2") format('woff2'), url("fontes/gothammedium-webfont.woff") format('woff'), url("fontes/gothammedium-webfont.ttf") format('truetype');
+  font-family: 'Josefin Sans';
+  src: url("../fonts/JosefinSans-Light.woff2") format('woff2'), url("../fonts/JosefinSans-Light.woff") format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url("../fonts/JosefinSans-Regular.woff2") format('woff2'), url("../fonts/JosefinSans-Regular.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'gotham';
-  src: url("fontes/gotham-bold-webfont.eot");
-  src: url("fontes/gotham-bold-webfont.eot?#iefix") format('embedded-opentype'), url("fontes/gotham-bold-webfont.woff2") format('woff2'), url("fontes/gotham-bold-webfont.woff") format('woff'), url("fontes/gotham-bold-webfont.ttf") format('truetype');
+  font-family: 'Josefin Sans';
+  src: url("../fonts/JosefinSans-Bold.woff2") format('woff2'), url("../fonts/JosefinSans-Bold.woff") format('woff');
   font-weight: bold;
-  font-style: bold;
-}
-@font-face {
-  font-family: 'gotham_lightregular';
-  src: url("fontes/gotham-light-webfont.eot");
-  src: url("fontes/gotham-light-webfont.eot?#iefix") format('embedded-opentype'), url("fontes/gotham-light-webfont.woff2") format('woff2'), url("fontes/gotham-light-webfont.woff") format('woff'), url("fontes/gotham-light-webfont.ttf") format('truetype');
-  font-weight: 100;
   font-style: normal;
 }
 p,
@@ -265,19 +259,13 @@ h6 {
   background-color: 'black';
 }
 .bg-oceano {
-  background-color: #06c47a;
+  background-color: #41babb;
 }
 .bg-inverse {
   background-color: #fff;
 }
 .bg-fundo {
-  background-color: #ebebeb;
-}
-.bg-verde-es {
-  background-color: #598f3f;
-}
-.bg-amarelo {
-  background-color: #e1b21a;
+  background-color: #272d4c;
 }
 .text-black {
   color: #333;
@@ -286,24 +274,18 @@ h6 {
   color: 'black';
 }
 .text-oceano {
-  color: #06c47a;
+  color: #41babb;
 }
 .text-inverse,
 footer {
   color: #fff;
 }
 .text-fundo {
-  color: #ebebeb;
-}
-.text-verde-es {
-  color: #598f3f;
-}
-.text-amarelo {
-  color: #e1b21a;
+  color: #272d4c;
 }
 body {
   font: 100%;
-  font-family: 'gothan', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   color: 'black';
 }
 p {
@@ -342,7 +324,7 @@ textarea:focus,
 input.form-control:focus,
 select.form-control:focus,
 textarea.form-control:focus {
-  border: 2px solid #06c47a;
+  border: 2px solid #41babb;
 }
 input[disabled],
 select[disabled],
@@ -425,33 +407,33 @@ button {
 .btn box-shadow 1s,
 .btn:hover {
   background-color: transparent;
-  color: #06c47a;
+  color: #41babb;
   box-shadow: 2px 0px 8px #9e9c9c;
 }
 .btn:focus {
-  background-color: #06c47a;
-  color: #06c47a;
+  background-color: #41babb;
+  color: #41babb;
 }
 .btn:active {
   background-color: transparent;
-  color: #06c47a;
+  color: #41babb;
 }
 .btn-default {
   background-color: transparent;
-  color: #06c47a;
-  border: 1px solid #06c47a;
+  color: #41babb;
+  border: 1px solid #41babb;
 }
 .btn-default:hover {
   background-color: transparent;
-  color: #06c47a;
-  border: 1px solid #06c47a;
+  color: #41babb;
+  border: 1px solid #41babb;
 }
 .btn-danger,
 .btn-success,
 .btn-warning {
   border-radius: 0px;
   padding: 10px 40px;
-  color: #06c47a;
+  color: #41babb;
 }
 .btn-danger {
   background-color: #c10500;
@@ -994,7 +976,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  background-color: #06c47a;
+  background-color: #41babb;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1060,7 +1042,7 @@ header {
   width: 100%;
   height: 100%;
   transition: 1s;
-  background-color: rgba(6,196,122,0.8);
+  background-color: rgba(65,186,187,0.8);
 }
 .div-curso-back a > * {
   -ms-flex-item-align: center;
@@ -1096,7 +1078,7 @@ header {
   background-color: #333;
 }
 .artigo-w:hover .artigo-textos h4 {
-  color: #06c47a;
+  color: #41babb;
 }
 .artigo-w:hover .artigo-textos p {
   color: #fff;
@@ -1124,7 +1106,7 @@ header {
   height: 4px;
   margin: auto;
   margin-top: -1px;
-  background-color: #06c47a;
+  background-color: #41babb;
 }
 .line-regiter {
   width: 40px;
@@ -1272,7 +1254,7 @@ img.slick-disabled {
 .ir-topo {
   width: 50px;
   height: 50px;
-  background-color: #06c47a;
+  background-color: #41babb;
   position: fixed;
   bottom: 10px;
   right: 10px;
@@ -1334,7 +1316,7 @@ footer .contato {
   }
 }
 .navegacao {
-  border-top: 1px solid #06c47a;
+  border-top: 1px solid #41babb;
 }
 .menu {
   cursor: pointer;
@@ -1366,16 +1348,16 @@ footer .contato {
   box-shadow: 0px 0px 10 px none;
 }
 #desk-nav li .nav-item:hover {
-  background-color: #06c47a;
-  box-shadow: 0px 0px 2px #06c47a;
+  background-color: #41babb;
+  box-shadow: 0px 0px 2px #41babb;
 }
 #desk-nav li .nav-item.ativo {
-  color: #06c47a;
+  color: #41babb;
 }
 #desk-nav li .nav-item.ativo:hover {
   box-shadow: 0;
   background-color: transparent;
-  color: #06c47a;
+  color: #41babb;
 }
 @media (max-width: 1200px) {
   #desk-nav {
