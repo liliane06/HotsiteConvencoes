@@ -1050,11 +1050,53 @@ footer .icone-face {
   }
 }
 #menu {
-  background-image: url("img/menu/background.png");
+  background-image: url("../img/menu/background.jpg");
   z-index: 9999999999;
   position: absolute;
   width: 100%;
   height: 100%;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.item-menu {
+  width: 100%;
+  max-width: 450px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+.fechar {
+  margin: auto;
+  width: 25px;
+  padding-bottom: 15px;
+}
+.itens {
+  list-style: none;
+  font-family: 'Josefin Sans', serif;
+  text-transform: uppercase;
+  line-height: 30px;
+  border: 1px solid #082136;
+  background: #082136;
+  width: 300px;
+  margin: auto;
+  padding: 100px 30px;
+  font-size: 12px;
+}
+.itens a {
+  color: #fff;
+  transition: 1s;
+}
+.itens a:hover {
+  color: #41babb;
+}
+.logo-menu {
+  margin-top: 100px;
 }
 @-webkit-keyframes loader {
   from {
