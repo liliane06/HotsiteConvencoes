@@ -1,72 +1,72 @@
 block settings
-    - var title = 'Experiência de Sucesso'
+    - var title = 'Attitude Convention Center'
 doctype
 html(lang="pt")
     head
         include ../_partials/meta-tags
+        include ../_partials/icons
         <link rel="apple-touch-icon" href="icon.png"> 
         title #{title}
         block CSS
             link(rel="stylesheet", href="css/plugins.css")
 
-    body.background
+    body      
         #loader
             img.loader-img.img-responsive(src="img/loader.png", alt="Lodder")
-        #menu(style="display:none;")
-            .item-menu
-                a(href="#")
-                    img.fechar(src="img/menu/fechar.png", alt="Fechar")
-                ul.itens.bold
-                    li 
-                        a(href="#") HOME
-                    li 
-                        a(href="#") ATTITUDE CONVENTION CENTER                       
-                    li 
-                        a(href="#") TEASER        
-                    li 
-                        a(href="#") planta
-                    li 
-                        a(href="#") Infraestrutura
-                    li 
-                        a(href="#") Diferenciais
-                    li 
-                        a(href="#") mapa
-                    li 
-                        a(href="#") agenda
-                    li 
-                        a(href="#") contato
-                a(href="#")
-                    img.logo-menu(src="img/menu/logo.png", alt="Logo")
+        #wrraper.background.relative
+            #menu(style="display:none;")
+                .item-menu
+                    a(href="#")
+                        img.fechar(src="img/menu/fechar.png", alt="Fechar")
+                    ul.itens.bold
+                        li 
+                            a(href="#") HOME
+                        li 
+                            a(href="#") ATTITUDE CONVENTION CENTER                       
+                        li 
+                            a(href="#") TEASER        
+                        li 
+                            a(href="#") planta
+                        li 
+                            a(href="#") Infraestrutura
+                        li 
+                            a(href="#") Diferenciais
+                        li 
+                            a(href="#") mapa
+                        li 
+                            a(href="#") agenda
+                        li 
+                            a(href="#") contato
+                    a(href="#")
+                        img.logo-menu(src="img/menu/logo.png", alt="Logo")
 
 
-        block header
-            section#topo
-                header
+            block header
+                section#topo
+                    header
+                        .container-fluid
+                            .row
+                                .col-xs-2
+                                    img.icone-interrogacao.img-responsive(src="img/interrogacao.png", alt="Ajuda")
+                                .col-xs-8
+                                    img.img-topo.img-responsive(src="img/logo-topo.png", alt="Logo")
+                                .col-xs-2
+                                    a(href="#")
+                                        img.icone-menu.img-responsive(src="img/menu.png", alt="")         
+
+    
+            block content
+
+            block footer
+                footer
                     .container-fluid
                         .row
-                            .col-sm-4
-                                img.icone-interrogacao(src="img/interrogacao.png", alt="Ajuda")
-                            .col-sm-4
-                                img.img-topo.img-responsive(src="img/logo-topo.png", alt="Logo")
-                            .col-sm-4
-                                a(href="#")
-                                    img.icone-menu(src="img/menu.png", alt="")         
-
-
-        block content
-        .ir-topo#ir-topo(style="display:none")
-            img(class="seta",src="https://s3-sa-east-1.amazonaws.com/happybiz-web/Experiencia-De-Sucesso/novo-site/home/seta.png", alt="")
-
-        block footer
-            footer
-                .container-fluid
-                    .row
-                        .col-md-4.text-oceano.contato
-                            p.bold 
-                                a(href="#") FALE CONOSCO
-                        .col-md-8.icone-face
-                            p
-                                img(src="img/icon-face.png", alt="Facebook") 
+                            .col-xs-4.text-oceano.contato
+                                p.bold 
+                                    a(href="#") FALE CONOSCO
+                            .col-xs-8.icone-face
+                                p
+                                    img(src="img/icon-face.png", alt="Facebook") 
 
                             
 

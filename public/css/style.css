@@ -938,7 +938,6 @@ header {
 }
 .img-topo {
   margin: auto;
-  max-width: 350px;
 }
 .icone-interrogacao {
   margin-top: 50px;
@@ -987,7 +986,17 @@ header {
   font-size: 35px;
   text-align: center;
   margin-top: 100px;
-  line-height: 45px;
+  line-height: 1.4;
+}
+@media screen and (max-width: 576px) {
+  .texto-home {
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.4;
+  }
 }
 .ir-topo {
   width: 50px;
