@@ -1,7 +1,7 @@
 /** 
 Definir as principais cores para os inputs
 */
-$border-color = transparent
+$border-color = #e0e0e0
 $border-color-focus =$colors['oceano']
 $border-radius = 0px
 
@@ -15,8 +15,6 @@ textarea.form-control
     border-radius: $border-radius
     border: 1px solid $border-color
     color: $colors['black']
-    text-align: center
-    background-color: #f8f8f8
     &:focus // inputs selecionados
       border: 2px solid $border-color-focus
     &[disabled]
@@ -34,6 +32,9 @@ textarea.is-valid
     border: 2px solid $colors['escola']
     color: $colors['black']
 
+option
+  background-color: $colors['oceano']
+  color white
 
 input[type="file"]
   border 0
@@ -62,7 +63,8 @@ select.form-control
   background-size: 15px
   background-repeat: no-repeat;
 
-
+.form-contato
+  margin-top 20px
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color:black;
 }

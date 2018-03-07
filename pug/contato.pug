@@ -1,0 +1,57 @@
+extends ./_layouts/hot-content.pug
+
+block append CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
+    link(rel="stylesheet", href="css/style.css")
+    
+
+block content
+    .container
+        .row.bg-inverse.mg-120-top
+            article.col-sm-12#content
+                .control-text-mapa
+                    h1.text-oceano.text-uppercase.bold contato
+                    h5.text-fundo.text-uppercase.bold.pd-20-top Como parceiro investidor você só tem a ganhar.
+                    .control-text-mapa
+                        p Com mais de 590 mil eventos realizados com um público de quase 202 milhões de participantes, concentrou 53% desses eventos na região Sudeste do país. Ao se tornar parceiro investidor, qualquer empreendedor pode pegar uma fatia de mais de R$209,2 bilhões que movimenta esse ramo de negócios que é a realização de eventos no Brasil
+                        p Registre-se aqui e receba mais detalhes sobre nossa proposta.
+                    
+
+                    form.pd-40-top
+                        .form-contato.row
+                            .col-sm-12
+                                input(type="email", class="form-control input-lg", placeholder="Nome")
+                        .form-contato.row
+                            .col-sm-6
+                                input(type="text", class="form-control input-lg", placeholder="CPF")
+                            .col-sm-6
+                                input(type="email", class="form-control input-lg", placeholder="Email")
+                        .form-contato.row
+                            .col-sm-6
+                                input(type="tel", class="form-control input-lg", placeholder="Telefone")
+                            .col-sm-6
+                                select(type="email", class="form-control input-lg")
+                                    option Avaliação
+                                    option A sua opinião
+                                    option Dúvidas
+                                    option Sugestões
+                        .form-contato.row
+                            .col-sm-12
+                                textarea.form-control(name="", cols="30", rows="10", placeholder="Mensagem")
+                        .form-contato.row
+                            .col-sm-12
+                                button.btn.bg-oceano.text-inverse Enviar
+
+                    
+                h5.bold.text-uppercase.text-center.pd-40-top.pd-40-bottom O seu evento é uma experiência ÚNICA <br>
+                    a.text-oceano Inscreva-se 
+                    | e receba nossa newsletter
+                
+
+
+block append scriptsJS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js", type="text/javascript")
+    script(src="js/app.js")
+
+

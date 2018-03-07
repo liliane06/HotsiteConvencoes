@@ -10,15 +10,21 @@
 	});
 
 	$('.icone-menu').on('click', function(){
-		console.log('teste');
 		$('#menu').fadeIn(299);
 	});
 
+	$('#icone-interrogacao').on('click', function(){
+		console.log('teste');
+		$('.popLeft').fadeToggle(299);
+	});
+
 	window.addEventListener('load', function(){
-		$('#loader').slideUp(299);
+		$('#loader').slideUp(1000);
 		maxHeight($('#wrraper'))
 	});
 	window.addEventListener('resize', function(){
 		maxHeight($('#wrraper'))
 	});
+
+	
 })($)

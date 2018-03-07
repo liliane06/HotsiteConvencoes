@@ -12,6 +12,26 @@
     background-attachment: fixed;
 
 
+.inter-w
+    width 50px
+
+#icone-interrogacao
+    cursor pointer
+.popLeft
+    @extends .bg-inverse
+    display none
+    position: absolute;
+    padding: 30px 10px;
+    text-align: center;
+    width: 150px;
+    right: -190px;
+    top: -20px;
+    line-height 1
+    img 
+        position: absolute;
+        left: -12px;
+        top: 25px;
+
 .texto-home
     text-transform: uppercase
     font-size: 35px;
@@ -23,6 +43,12 @@
     margin 0 remify(-120px)
 .control-text-mapa
     padding remify(100px) remify(60px)
+    padding-left: remify(180px)
+
+.control-text-infraestrutura
+    @extends .control-text-mapa
+    padding-bottom: 0
+
 
 
 .icon-image
@@ -49,14 +75,46 @@
 .pd-video
     padding-bottom: 300px
 
+.infra-img
+    margin-top: -50px
+
+
+.image-banner-infra
+    background-position: center center
+    background-size: cover
+    h3 
+        display inline
+        text-transform: uppercase
+        font-size: remify(50px)
+    .over-texto
+        display flex
+        width 100%
+        height 100%
+        opacity 0
+        background-color: alpha(darken($colors['fundo'], 30%), 0.9)
+        justify-content: center
+        padding remify(200px) 0
+        transition: 1s
+    &:hover .over-texto
+        padding remify(200px) 0
+        opacity 1
+
+
 .img-agenda
     background-image: url(../img/agenda/img.png)
 
 @media screen  and (max-width: $queries['medium'])
+    .infra-img
+        margin-top: 10px
+        margin-bottom: 10px
     #bannersGalery
         margin 0 remify(-40px)
     .control-text-mapa
         padding remify(20px) remify(0)
+        padding-left: remify(0)
+    .control-text-infraestrutura
+        padding remify(20px) remify(0)
+        padding-left: remify(0)
 
 @media screen  and (max-width: $queries['small'])
     .texto-home
