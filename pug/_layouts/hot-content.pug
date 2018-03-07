@@ -13,32 +13,8 @@ html(lang="pt")
     body      
         #loader
             img.loader-img.img-responsive(src="img/loader.png", alt="Lodder")
-        
-        #menu(style="display:none;")
-            .item-menu
-                a(href="#")
-                    img.fechar(src="img/menu/fechar.png", alt="Fechar")
-                ul.itens.bold
-                    li 
-                        a(href="#") HOME
-                    li 
-                        a(href="#") ATTITUDE CONVENTION CENTER                       
-                    li 
-                        a(href="#") TEASER        
-                    li 
-                        a(href="#") planta
-                    li 
-                        a(href="#") Infraestrutura
-                    li 
-                        a(href="#") Diferenciais
-                    li 
-                        a(href="#") mapa
-                    li 
-                        a(href="#") agenda
-                    li 
-                        a(href="#") contato
-                a(href="#")
-                    img.logo-menu(src="img/menu/logo.png", alt="Logo")
+        include ../_partials/menu.pug
+
 
         #wrraper.background-content.relative
             block header

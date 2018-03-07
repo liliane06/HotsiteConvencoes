@@ -5,10 +5,12 @@
 		$(el).css('minHeight', $(window).height());
 	}
 	$('.fechar').on('click', function(){
+
 		$('#menu').fadeOut(299);
 	});
 
 	$('.icone-menu').on('click', function(){
+		console.log('teste');
 		$('#menu').fadeIn(299);
 	});
 
