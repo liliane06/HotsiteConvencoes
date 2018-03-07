@@ -1,0 +1,72 @@
+block settings
+    - var title = 'Attitude Convention Center'
+doctype
+html(lang="pt")
+    head
+        include ../_partials/meta-tags
+        include ../_partials/icons
+        <link rel="apple-touch-icon" href="icon.png"> 
+        title #{title}
+        block CSS
+            link(rel="stylesheet", href="css/plugins.css")
+
+    body      
+        #loader
+            img.loader-img.img-responsive(src="img/loader.png", alt="Lodder")
+        #wrraper.background.relative
+            #menu(style="display:none;")
+                .item-menu
+                    a(href="#")
+                        img.fechar(src="img/menu/fechar.png", alt="Fechar")
+                    ul.itens.bold
+                        li 
+                            a(href="#") HOME
+                        li 
+                            a(href="#") ATTITUDE CONVENTION CENTER                       
+                        li 
+                            a(href="#") TEASER        
+                        li 
+                            a(href="#") planta
+                        li 
+                            a(href="#") Infraestrutura
+                        li 
+                            a(href="#") Diferenciais
+                        li 
+                            a(href="#") mapa
+                        li 
+                            a(href="#") agenda
+                        li 
+                            a(href="#") contato
+                    a(href="#")
+                        img.logo-menu(src="img/menu/logo.png", alt="Logo")
+
+
+            block header
+                section#topo
+                    header
+                        .container-fluid
+                            .row
+                                .col-xs-2
+                                    img.icone-interrogacao.img-responsive(src="img/interrogacao.png", alt="Ajuda")
+                                .col-xs-8
+                                    img.img-topo.img-responsive(src="img/logo-topo.png", alt="Logo")
+                                .col-xs-2
+                                    a(href="#")
+                                        img.icone-menu.img-responsive(src="img/menu.png", alt="")         
+
+    
+            block content
+
+            block footer
+                footer
+                    .container
+                        .row
+                            .col-sm-12
+                                img.img-responsive.center-block(src="img/logo-footer.png", alt="")
+                    
+
+        block scriptsJS
+            script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+            script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+
+            

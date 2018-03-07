@@ -988,6 +988,10 @@ header {
   margin-top: 100px;
   line-height: 1.4;
 }
+#content {
+  margin-top: 12rem;
+  padding: 4rem 0;
+}
 @media screen and (max-width: 576px) {
   .texto-home {
     text-transform: uppercase;
