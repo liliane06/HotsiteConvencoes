@@ -5,6 +5,13 @@
    background-repeat: no-repeat
    background-size: cover
 
+.background-content
+    @extends .background
+    background-image: url(../img/background-content.jpg)
+    background-size: auto;
+    background-attachment: fixed;
+
+
 .texto-home
     text-transform: uppercase
     font-size: 35px;
@@ -12,9 +19,23 @@
     margin-top: 100px
     line-height: 1.4
 
+#bannersGalery
+    margin 0 remify(-120px)
+.control-text-mapa
+    padding remify(100px) remify(60px)
+
+
+.icon-image
+    margin-top 80px
 
 #content
     padding remify(40px) remify(20px)
+
+@media screen  and (max-width: $queries['medium'])
+    #bannersGalery
+        margin 0 remify(-40px)
+    .control-text-mapa
+        padding remify(20px) remify(0)
 
 @media screen  and (max-width: $queries['small'])
     .texto-home

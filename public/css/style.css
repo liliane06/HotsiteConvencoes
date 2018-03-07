@@ -127,32 +127,32 @@ footer p {
   font-weight: bold;
 }
 h1 {
-  font-size: 6rem;
-}
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 5.4rem;
-    text-align: left;
-  }
-}
-@media screen and (max-width: 576px) {
-  h1 {
-    font-size: 4.199999999999999rem;
-    text-align: center;
-  }
-}
-h2 {
   font-size: 5rem;
 }
 @media screen and (max-width: 768px) {
-  h2 {
+  h1 {
     font-size: 4.5rem;
     text-align: left;
   }
 }
 @media screen and (max-width: 576px) {
-  h2 {
+  h1 {
     font-size: 3.5rem;
+    text-align: center;
+  }
+}
+h2 {
+  font-size: 4.5rem;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 4.05rem;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 576px) {
+  h2 {
+    font-size: 3.15rem;
     text-align: center;
   }
 }
@@ -1086,7 +1086,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
+  position: fixed;
   background-color: #fff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1102,12 +1102,18 @@ header {
 .loader-img {
   height: 90px;
 }
-.background {
+.background,
+.background-content {
   background-color: #272d4c;
   background-image: url("../img/background.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.background-content {
+  background-image: url("../img/background-content.jpg");
+  background-size: auto;
+  background-attachment: fixed;
 }
 .texto-home {
   text-transform: uppercase;
@@ -1116,8 +1122,25 @@ header {
   margin-top: 100px;
   line-height: 1.4;
 }
+#bannersGalery {
+  margin: 0 -12rem;
+}
+.control-text-mapa {
+  padding: 10rem 6rem;
+}
+.icon-image {
+  margin-top: 80px;
+}
 #content {
   padding: 4rem 2rem;
+}
+@media screen and (max-width: 768px) {
+  #bannersGalery {
+    margin: 0 -4rem;
+  }
+  .control-text-mapa {
+    padding: 2rem 0;
+  }
 }
 @media screen and (max-width: 576px) {
   .texto-home {
@@ -1138,25 +1161,8 @@ header {
   right: 10px;
   cursor: pointer;
 }
-.seta {
-  padding-top: 10px;
-  padding-left: 5px;
-}
-footer {
-  bottom: 0;
-  width: 100%;
-}
-footer .contato {
-  text-align: left;
-  padding-left: 30px;
-  padding-top: 20px;
-}
-footer .contato a {
-  color: #41babb;
-}
-footer .icone-face {
-  text-align: right;
-  padding-right: 30px;
+.logo-rodape {
+  padding: 8rem 0;
 }
 @media screen and (max-width: 768px) {
   footer .copyright {
@@ -1187,7 +1193,7 @@ footer .icone-face {
 #menu {
   background-image: url("../img/menu/background.jpg");
   z-index: 9999999999;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   background-position: center center;

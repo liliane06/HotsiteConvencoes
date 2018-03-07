@@ -13,34 +13,34 @@ html(lang="pt")
     body      
         #loader
             img.loader-img.img-responsive(src="img/loader.png", alt="Lodder")
-        #wrraper.background.relative
-            #menu(style="display:none;")
-                .item-menu
-                    a(href="#")
-                        img.fechar(src="img/menu/fechar.png", alt="Fechar")
-                    ul.itens.bold
-                        li 
-                            a(href="#") HOME
-                        li 
-                            a(href="#") ATTITUDE CONVENTION CENTER                       
-                        li 
-                            a(href="#") TEASER        
-                        li 
-                            a(href="#") planta
-                        li 
-                            a(href="#") Infraestrutura
-                        li 
-                            a(href="#") Diferenciais
-                        li 
-                            a(href="#") mapa
-                        li 
-                            a(href="#") agenda
-                        li 
-                            a(href="#") contato
-                    a(href="#")
-                        img.logo-menu(src="img/menu/logo.png", alt="Logo")
+        
+        #menu(style="display:none;")
+            .item-menu
+                a(href="#")
+                    img.fechar(src="img/menu/fechar.png", alt="Fechar")
+                ul.itens.bold
+                    li 
+                        a(href="#") HOME
+                    li 
+                        a(href="#") ATTITUDE CONVENTION CENTER                       
+                    li 
+                        a(href="#") TEASER        
+                    li 
+                        a(href="#") planta
+                    li 
+                        a(href="#") Infraestrutura
+                    li 
+                        a(href="#") Diferenciais
+                    li 
+                        a(href="#") mapa
+                    li 
+                        a(href="#") agenda
+                    li 
+                        a(href="#") contato
+                a(href="#")
+                    img.logo-menu(src="img/menu/logo.png", alt="Logo")
 
-
+        #wrraper.background-content.relative
             block header
                 section#topo
                     header
@@ -65,7 +65,7 @@ html(lang="pt")
                                 img.img-responsive.center-block(src="img/after-article.png", alt="Imagem")
                         .row
                             .col-sm-12
-                                img.img-responsive.center-block(src="img/logo-footer.png", alt="Logo rodapé")
+                                img.img-responsive.center-block.logo-rodape(src="img/logo-footer.png", alt="Logo rodapé")
                     
 
         block scriptsJS
