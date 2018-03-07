@@ -1119,6 +1119,27 @@ header {
 #content {
   padding: 4rem 2rem;
 }
+.img-planta {
+  border: 1px solid #41babb;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+.img-center {
+  text-align: center;
+}
+.texto-planta {
+  margin-left: 10%;
+}
+.video {
+  padding: 50px 100px;
+}
+.pd-video {
+  padding-bottom: 300px;
+}
+.img-agenda {
+  background-image: url("../img/agenda/img.png");
+}
 @media screen and (max-width: 576px) {
   .texto-home {
     text-transform: uppercase;
