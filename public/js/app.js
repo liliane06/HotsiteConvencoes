@@ -2,7 +2,7 @@
 
 	// deixar com 100 de altura
 	function maxHeight(el){
-		$(el).height($(window).height());
+		$(el).css('minHeight', $(window).height());
 	}
 	$('.fechar').on('click', function(){
 		$('#menu').fadeOut(299);
