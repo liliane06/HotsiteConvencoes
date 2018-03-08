@@ -1105,6 +1105,20 @@ header {
 .loader-img {
   height: 90px;
 }
+@media screen and (max-width: 768px) {
+  .icone-menu,
+  .icone-interrogacao {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    left: 0;
+    top: 20px;
+  }
+  .icone-menu {
+    right: 10px;
+    max-width: 50px;
+  }
+}
 .background,
 .background-content {
   background-color: #272d4c;
@@ -1133,6 +1147,7 @@ header {
   right: -190px;
   top: -20px;
   line-height: 1;
+  z-index: 9;
 }
 .popLeft img {
   position: absolute;
@@ -1211,8 +1226,14 @@ header {
   padding: 20rem 0;
   opacity: 1;
 }
+.agenda-itens div {
+  margin-top: 15px;
+}
 .img-agenda {
   background-image: url("../img/agenda/img.png");
+  background-position: center center;
+  background-size: cover;
+  height: 230px;
 }
 @media screen and (max-width: 768px) {
   .infra-img {
@@ -1301,13 +1322,24 @@ footer .icone-face img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.item-menu {
+#menu .item-menu {
   width: 100%;
   max-width: 450px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   text-align: center;
+}
+#menu .item-menu::after {
+  width: 100%;
+  content: " ";
+  height: 120px;
+  background-image: url("../img/menu/logo.png");
+  position: absolute;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  left: 0;
+  background-position: center center;
 }
 .fechar {
   margin: auto;

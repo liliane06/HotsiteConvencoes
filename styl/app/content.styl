@@ -27,6 +27,7 @@
     right: -190px;
     top: -20px;
     line-height 1
+    z-index 9
     img 
         position: absolute;
         left: -12px;
@@ -100,8 +101,15 @@
         opacity 1
 
 
+.agenda-itens
+    div
+        margin-top 15px
+
 .img-agenda
     background-image: url(../img/agenda/img.png)
+    background-position: center center
+    background-size: cover
+    height 230px
 
 @media screen  and (max-width: $queries['medium'])
     .infra-img

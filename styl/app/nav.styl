@@ -6,13 +6,22 @@
     height 100%
     background-position: center center
     display: flex
-    justify-content: center
-
-.item-menu
-    width: 100%
-    max-width: 450px
-    align-self: center
-    text-align: center
+    justify-content: center  
+    .item-menu
+        width: 100%
+        max-width: 450px
+        align-self: center
+        text-align: center
+        &::after
+            width: 100%
+            content " "
+            height 120px
+            background-image: url('../img/menu/logo.png')
+            position absolute
+            margin-top 20px
+            background-repeat: no-repeat
+            left 0
+            background-position: center center
 
 .fechar
     margin: auto
