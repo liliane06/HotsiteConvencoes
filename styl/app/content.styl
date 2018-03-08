@@ -110,6 +110,24 @@
     background-position: center center
     background-size: cover
     height 230px
+    position: relative
+    p
+        font-size: 20px
+        opacity: 0
+        position: absolute
+        bottom: 0
+        width: 100%
+        text-align: center
+        background-color: #010201
+        padding-top: 10px
+        transition: 1s
+    &:hover p
+        opacity: 1
+
+.img-diferenciais
+    text-align: center
+    img 
+        margin: auto
 
 @media screen  and (max-width: $queries['medium'])
     .infra-img
