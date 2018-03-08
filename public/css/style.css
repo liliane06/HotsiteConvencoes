@@ -236,7 +236,7 @@ h6 {
   background-color: #333;
 }
 .bg-text {
-  background-color: 'black';
+  background-color: #767676;
 }
 .bg-oceano {
   background-color: #41babb;
@@ -252,7 +252,7 @@ h6 {
   color: #333;
 }
 .text-text {
-  color: 'black';
+  color: #767676;
 }
 .text-oceano {
   color: #41babb;
@@ -267,7 +267,7 @@ footer {
 body {
   font: 100%;
   font-family: 'Josefin Sans', sans-serif;
-  color: 'black';
+  color: #767676;
 }
 p {
   font-size: 15px;

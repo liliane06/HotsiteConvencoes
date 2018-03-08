@@ -1,5 +1,17 @@
 (function($){
 
+	// slicks
+	$('#bannersInfra, #bannersGalery').slick({
+		arrows: false,
+		infinite: true,
+		speed: 500,
+		fade: true,
+		dots: true,
+		cssEase: 'linear',
+		pauseOnFocus: false,
+		pauseOnHover: false
+	  });
+
 	// deixar com 100 de altura
 	function maxHeight(el){
 		$(el).css('minHeight', $(window).height());
@@ -14,7 +26,6 @@
 	});
 
 	$('#icone-interrogacao').on('click', function(){
-		console.log('teste');
 		$('.popLeft').fadeToggle(299);
 	});
 
