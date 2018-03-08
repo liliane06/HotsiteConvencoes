@@ -96,9 +96,13 @@
         justify-content: center
         padding remify(200px) 0
         transition: 1s
+        flex-direction: column
+        & > *
+            align-self: center
     &:hover .over-texto
         padding remify(200px) 0
         opacity 1
+       
 
 
 .agenda-itens
@@ -128,6 +132,9 @@
     text-align: center
     img 
         margin: auto
+
+hr
+    border: 1px solid #3fb3b4
 
 @media screen  and (max-width: $queries['medium'])
     .infra-img
