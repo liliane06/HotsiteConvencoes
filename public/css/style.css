@@ -287,6 +287,26 @@ blockquote {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #20304f;
+}
+.slick-dots li button:before {
+  font-family: slick;
+  font-size: 12px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: 1;
+  color: #41babb;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 input,
 select,
 textarea,
@@ -1268,13 +1288,18 @@ header {
 hr {
   border: 1px solid #3fb3b4;
 }
+@media screen and (max-width: 1392px) {
+  #bannersGalery {
+    margin: 0 -1rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .infra-img {
     margin-top: 10px;
     margin-bottom: 10px;
   }
   #bannersGalery {
-    margin: 0 -4rem;
+    margin: 0 0;
   }
   .control-text-mapa {
     padding: 2rem 0;
